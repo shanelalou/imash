@@ -1,0 +1,464 @@
+<?php include '../config.php';?>
+<?php
+	if(isset($_SESSION['student'])){
+	header("Location: grades");
+	}
+?>
+<!DOCTYPE html>
+
+<html>
+<head>
+
+
+
+<link rel="stylesheet" href="css/design.css" />
+<link rel="stylesheet" href="themes/A-F.min.css" />
+<link rel="stylesheet" href="css/1.css" />
+<script src="js/2.js"></script>
+<script src="js/3.js"></script>
+		
+		
+
+<script>
+// Don't forget to load the jQuery library before doing this
+// Initialize jQuery
+$(document).ready(function() {
+     // Set the variable $width to the width of our wrapper on page load
+     $width = $('#content').width();
+     // Target all images inside the #content. This works best if you want to ignore certain images that are part of the layout design
+     $('#content img').css({
+          // Using jQuery CSS we write the $width variable we previously specified as a pixel value. We use max-width incase the image is smaller than our viewport it won't scale it larger. Don't forget to set height to auto or else it will squish your photos.
+          'max-width' : $width , 'height' : 'auto'
+          });
+     });
+
+	 </script>
+  
+</head>
+<body>
+
+
+
+<!--Front Page-->
+<div data-role="page" data-theme="a" id="first" class="content">
+<div data-role="header" data-theme="b" div style="min-height: 90px;" align="center" >
+<div id="content" data-theme="a"><img src="images/header.png" height="130" width="450"></div>
+</div>
+
+<div data-role="content" align="center">
+</br></br></br></br>
+	<div id="content"><img src="images/imash.png" height="650" width="750"></div>
+	
+	
+		</br></br></br>
+	 <div id="content"><a href="#main" data-role="button" data-theme="c" class="my-button" style="font-size:60px;" data-transition="flow" id="content"><font size="13px">Enter Portal</font></a></div>
+	
+<div data-role="footer" data-position="fixed" data-theme="b">
+	<h1>Alrights Reserved 2013</h1>
+</div>
+
+    </div>
+</div>
+
+<!--Main Page-->
+<div data-role="page" data-theme="e" id="main">
+ <div data-role="header" data-theme="b" div style="min-height: 130px;" align="center">
+  <a href="#first" data-role="button" data-icon="arrow-l" data-iconpos="left" data-inline="true"><font size="5">Home</font></a>
+<img src="images/header.png" height="130" width="500">
+</div>
+  <div data-role="content">
+  
+  <div data-role="controlgroup" data-type="horizontal" align="center" id="content">
+    <a href="#panel1" data-role="button" data-theme="c" class="my-buttonssss"><font size="5px">My College</font></a>
+    <a href="#" data-role="button" data-theme="c" class="my-buttonsss" data-transition="flip"><font size="5px">UPDATES</font></a>
+    <a href="portal.html" data-role="button" data-theme="c" class="my-buttonss"><font size="5px">PORTAL</font></a>
+</div>
+<center>
+
+  <div id="content"><img src="images/ccs.png" height="200" width="200"></div></br></br>
+ <font size="5" face="Century Gothic"> Gordon College a local institution in Olongapo City It was founded on February 24, 1999 and consists of Five Colleges including the College of Computer Studies that offers computer-related courses such as BSIT, BSCS and ACT with a population of 608 students
+located at Old Hospital Road East Tapinac, Olongapo City, Philippines.</font></center>
+  
+  </div>
+ 
+  <!-- defaultpanel My College -->
+    <div data-role="panel" id="panel1" data-theme="b">
+ 
+      <div class="panel-content">
+	 <center><img src="images/ccs.png" height="140" width="180"></center>
+        <h1 align="center"><font size="6px" face="Century Gothic">MY COLLEGE</font></h1>
+         <a href="#vmg" data-role="button" data-theme="e" data-transition="flow"><font size="5px" face="Century Gothic">GC-CCS VMG</font></a></br></br>
+		  <a href="#courses" data-role="button" data-theme="e" data-transition="flow"><font size="5px" face="Century Gothic">Courses Offered</font></a></br></br>
+		   <a href="#courses" data-role="button" data-theme="e" data-transition="flow"><font size="5px" face="Century Gothic">Admission</font></a></br></br>
+		   
+		<a href="#faculty" data-role="button" data-theme="e" data-transition="flow"><font size="5px" face="Century Gothic">GC-CCS Faculty</font></a></br></br>
+		 <a href="#calendar" data-role="button" data-theme="e" data-transition="flow"><font size="5px" face="Century Gothic">Academic Calendar</font></a></br></br>
+		 <a href="#gallery" data-role="button" data-theme="e" data-transition="flow"><font size="5px" face="Century Gothic">Industry Partners</font></a></br></br>
+		<a href="#contact" data-role="button" data-theme="e" data-transition="flow"><font size="5px" face="Century Gothic">Contact Us</font></a></br></br>
+		<a href="#about" data-role="button" data-theme="e" data-transition="flow"><font size="5px" face="Century Gothic">About</font></a></br></br>
+        <a href="#demo-links" data-rel="close" data-role="button" data-theme="f" data-icon="delete" align="center"><font size="5px" face="Century Gothic">Close panel</a></font>
+      </div><!-- /content wrapper for padding -->
+ 
+    </div><!-- /defaultpanel -->
+	
+	
+	
+	 <div data-role="footer" data-position="fixed" data-theme="b">
+	<h1>Alrights Reserved 2013</h1>
+</div>
+	
+</div>
+
+  <!-- panel end -->
+  
+  
+  <!-- CALENDAR-->
+<div data-role="page" data-theme="e" id="calendar">
+ <div data-role="header" data-theme="b" div style="min-height: 130px;" align="center">
+ <a href="#main" data-role="button" data-icon="arrow-l" data-iconpos="left" data-inline="true"><font size="5">Back</font></a>
+<img src="images/header.png" height="130" width="500">
+</div>
+  <div data-role="content" align="center">
+  
+  <h3 class="acad">Academic Year 2013-2014</h3></br></br>
+  
+  <!--MONTHS-->
+  <div data-role="collapsible" data-theme="c" data-content-theme="a" class="my-calendar">
+    <h4>JUNE</h4>
+    <p>I'm the collapsible content with a themed content block set to "d".</p>
+</div>
+  
+  <div data-role="collapsible" data-theme="c" data-content-theme="a" class="my-calendar">
+    <h4>JULY</h4>
+    <p>I'm the collapsible content with a themed content block set to "d".</p>
+</div>
+
+<div data-role="collapsible" data-theme="c" data-content-theme="a" class="my-calendar">
+    <h4>AUGUST</h4>
+    <p>I'm the collapsible content with a themed content block set to "d".</p>
+</div>
+
+<div data-role="collapsible" data-theme="c" data-content-theme="a" class="my-calendar">
+    <h4>SEPTEMBER</h4>
+    <p>I'm the collapsible content with a themed content block set to "d".</p>
+</div>
+
+<div data-role="collapsible" data-theme="c" data-content-theme="a" class="my-calendar">
+    <h4>OCTOBER</h4>
+    <p>I'm the collapsible content with a themed content block set to "d".</p>
+</div>
+
+<div data-role="collapsible" data-theme="c" data-content-theme="a" class="my-calendar">
+    <h4>NOVEMBER</h4>
+    <p>I'm the collapsible content with a themed content block set to "d".</p>
+</div>
+
+<div data-role="collapsible" data-theme="c" data-content-theme="a" class="my-calendar">
+    <h4>DECEMBER</h4>
+    <p>I'm the collapsible content with a themed content block set to "d".</p>
+</div>
+
+<div data-role="collapsible" data-theme="c" data-content-theme="a" class="my-calendar">
+    <h4>JANUARY</h4>
+    <p>I'm the collapsible content with a themed content block set to "d".</p>
+</div>
+
+<div data-role="collapsible" data-theme="c" data-content-theme="a" class="my-calendar">
+    <h4>FERBRUARY</h4>
+    <p>I'm the collapsible content with a themed content block set to "d".</p>
+</div>
+
+<div data-role="collapsible" data-theme="c" data-content-theme="a" class="my-calendar">
+    <h4>MARCH</h4>
+    <p>I'm the collapsible content with a themed content block set to "d".</p>
+</div>
+
+<div data-role="collapsible" data-theme="c" data-content-theme="a" class="my-calendar">
+    <h4>APRIL</h4>
+    <p>I'm the collapsible content with a themed content block set to "d".</p>
+</div>
+  <!--END-->
+	 <div data-role="footer" data-position="fixed" data-theme="b">
+	<h1>Alrights Reserved 2013</h1>
+</div>
+	
+</div>
+  
+  </div>
+ 
+ 
+ <!--VMG-->
+<div data-role="page" data-theme="e" id="vmg">
+ <div data-role="header" data-theme="b" div style="min-height: 130px;" align="center">
+ <a href="#main" data-role="button" data-icon="arrow-l" data-iconpos="left" data-inline="true"><font size="5">Back</font></a>
+<img src="images/header.png" height="130" width="500">
+</div>
+  <div data-role="content" align="center">
+  
+  
+     <div data-role="controlgroup" data-type="horizontal" align="center" >
+    <a href="#vmg" data-role="button" data-theme="c" class="my-buttonssss"><font size="5px">VISION</font></a>
+    <a href="#mission" data-role="button" data-theme="c" class="my-buttonsssz" data-transition="flip"><font size="5px">MISSION</font></a>
+    <a href="#goals" data-role="button" data-theme="c" class="my-buttonss"><font size="5px">GOALS</font></a>	
+    </div>
+
+</br></br>
+<div id="content"><img src="images/vision.png" height="950" width="630"></div>
+
+	 <div data-role="footer" data-position="fixed" data-theme="b">
+	<h1>Alrights Reserved 2013</h1>
+</div>
+	
+</div>
+  
+  </div>
+  <!--VMG end-->
+  
+  
+  
+   <!--Mission-->
+<div data-role="page" data-theme="e" id="mission">
+ <div data-role="header" data-theme="b" div style="min-height: 130px;" align="center">
+ <a href="#main" data-role="button" data-icon="arrow-l" data-iconpos="left" data-inline="true"><font size="5">Back</font></a>
+<img src="images/header.png" height="130" width="500">
+</div>
+  <div data-role="content" align="center">
+  
+  
+     <div data-role="controlgroup" data-type="horizontal" align="center" >
+    <a href="#vmg" data-role="button" data-theme="c" class="my-buttonssss" data-transition="pop"><font size="5px">VISION</font></a>
+    <a href="#mission" data-role="button" data-theme="c" class="my-buttonsssz" data-transition="flip"><font size="5px">MISSION</font></a>
+    <a href="#goals" data-role="button" data-theme="c" class="my-buttonss"><font size="5px">GOALS</font></a>	
+    </div>
+
+</br></br>
+<div id="content"><img src="images/mission.png" height="950" width="630"></div>
+
+
+	 <div data-role="footer" data-position="fixed" data-theme="b">
+	<h1>Alrights Reserved 2013</h1>
+</div>
+	
+</div>
+  
+  </div>
+  <!--mission end-->
+  
+  <!--Goals-->
+<div data-role="page" data-theme="e" id="goals">
+ <div data-role="header" data-theme="b" div style="min-height: 130px;" align="center">
+ <a href="#main" data-role="button" data-icon="arrow-l" data-iconpos="left" data-inline="true"><font size="5">Back</font></a>
+<img src="images/header.png" height="130" width="500">
+</div>
+  <div data-role="content" align="center">
+  
+  
+     <div data-role="controlgroup" data-type="horizontal" align="center" >
+    <a href="#vmg" data-role="button" data-theme="c" class="my-buttonssss" data-transition="pop"><font size="5px">VISION</font></a>
+    <a href="#mission" data-role="button" data-theme="c" class="my-buttonsssz" data-transition="flip"><font size="5px">MISSION</font></a>
+    <a href="#goals" data-role="button" data-theme="c" class="my-buttonss"><font size="5px">GOALS</font></a>	
+    </div>
+
+
+
+</br>
+<div data-role="controlgroup" data-type="horizontal" align="center" >
+    <a href="#goals" data-role="button" data-theme="c" class="my-buttonssss" data-transition="pop"><font size="5px">1</font></a>
+    <a href="#goals1" data-role="button" data-theme="c" class="my-buttonsssz" data-transition="flip"><font size="5px">2</font></a>
+
+    </div>
+<div id="content"><img src="images/goals.png" height="950" width="600"></div>
+
+
+	 <div data-role="footer" data-position="fixed" data-theme="b">
+	<h1>Alrights Reserved 2013</h1>
+</div>
+	
+</div>
+  
+  </div>
+  
+  
+  
+  <div data-role="page" data-theme="e" id="goals1">
+ <div data-role="header" data-theme="b" div style="min-height: 130px;" align="center">
+ <a href="#main" data-role="button" data-icon="arrow-l" data-iconpos="left" data-inline="true"><font size="5">Back</font></a>
+<img src="images/header.png" height="130" width="500">
+</div>
+  <div data-role="content" align="center">
+  
+  
+     <div data-role="controlgroup" data-type="horizontal" align="center" >
+    <a href="#vmg" data-role="button" data-theme="c" class="my-buttonssss" data-transition="pop"><font size="5px">VISION</font></a>
+    <a href="#mission" data-role="button" data-theme="c" class="my-buttonsssz" data-transition="flip"><font size="5px">MISSION</font></a>
+    <a href="#goals" data-role="button" data-theme="c" class="my-buttonss"><font size="5px">GOALS</font></a>	
+    </div>
+
+</br>
+<div data-role="controlgroup" data-type="horizontal" align="center" >
+    <a href="#goals" data-role="button" data-theme="c" class="my-buttonssss" data-transition="pop"><font size="5px">1</font></a>
+    <a href="#goals1" data-role="button" data-theme="c" class="my-buttonsssz" data-transition="flip"><font size="5px">2</font></a>
+
+    </div>
+<div id="content"><img src="images/goals1.png" height="950" width="600"></div>
+
+
+	 <div data-role="footer" data-position="fixed" data-theme="b">
+	<h1>Alrights Reserved 2013</h1>
+</div>
+	
+</div>
+  
+  </div>
+  <!--goals end-->
+  
+   <!--Courses Offered-->
+<div data-role="page" data-theme="e" id="courses">
+ <div data-role="header" data-theme="b" div style="min-height: 130px;" align="center">
+ <a href="#main" data-role="button" data-icon="arrow-l" data-iconpos="left" data-inline="true"><font size="5">Back</font></a>
+<img src="images/header.png" height="130" width="500">
+</div>
+  <div data-role="content" align="center">
+  
+  <h3 class="acad">COURSES OFFERED</h3>
+  
+    
+	 <div data-role="footer" data-position="fixed" data-theme="b">
+	<h1>Alrights Reserved 2013</h1>
+</div>
+	
+</div>
+  
+  </div>
+  <!--Courses Offered end-->
+  
+  
+    <!--faculty-->
+<div data-role="page" data-theme="e" id="faculty">
+ <div data-role="header" data-theme="b" div style="min-height: 130px;" align="center">
+ <a href="#main" data-role="button" data-icon="arrow-l" data-iconpos="left" data-inline="true"><font size="5">Back</font></a>
+<img src="images/header.png" height="130" width="500">
+</div>
+  <div data-role="content" align="center">
+  
+  <h3 class="acad">GC-CCS FACULTY</h3>
+  
+    
+	 <div data-role="footer" data-position="fixed" data-theme="b">
+	<h1>Alrights Reserved 2013</h1>
+</div>
+	
+</div>
+  
+  </div>
+  <!--faculty end-->
+  
+
+  
+      
+  
+      <!--Contact Us-->
+<div data-role="page" data-theme="e" id="contact">
+ <div data-role="header" data-theme="b" div style="min-height: 130px;" align="center">
+ <a href="#main" data-role="button" data-icon="arrow-l" data-iconpos="left" data-inline="true"><font size="5">Back</font></a>
+<img src="images/header.png" height="130" width="500">
+</div>
+  <div data-role="content" align="center">
+  
+  <h3 class="acad">CONTACT US</h3>
+ 
+  <div id="content"><img src="images/contacts.png" height="950" width="600"></div>
+    
+	 <div data-role="footer" data-position="fixed" data-theme="b">
+	<h1>Alrights Reserved 2013</h1>
+</div>
+	
+</div>
+  
+  </div>
+  <!--Contact end-->
+  
+  
+      <!--About-->
+<div data-role="page" data-theme="e" id="about">
+ <div data-role="header" data-theme="b" div style="min-height: 130px;" align="center">
+ <a href="#main" data-role="button" data-icon="arrow-l" data-iconpos="left" data-inline="true">Back</a>
+<img src="images/header.png" height="130" width="500">
+</div>
+  <div data-role="content" align="center">
+  
+  <h3 class="acad">ABOUT</h3>
+  
+    
+	 <div data-role="footer" data-position="fixed" data-theme="b">
+	<h1>Alrights Reserved 2013</h1>
+</div>
+	
+</div>
+  
+  </div>
+  <!--About end-->
+  
+  
+  
+        <!--PORTAL-->
+<div data-role="page" data-theme="e" id="portal">
+ <div data-role="header" data-theme="b" div style="min-height: 130px;" align="center">
+ <a href="#main" data-role="button" data-icon="arrow-l" data-iconpos="left" data-inline="true">Back</a>
+<img src="images/header.png" height="130" width="500">
+</div>
+  <div data-role="content" align="center">
+  
+  <h3 class="acad">ABOUT</h3>
+  
+  <!---->
+  	<div id="login-form" style="background:#d7d7d7;width:420px;height:330px;border:1px solid gray;border-radius:3px;margin-top:20px;" class="left">
+				
+				<div style="width:100%;height:35px;background:url(../source/images/th2.png);border-top-left-radius:3px;border-top-right-radius:3px;">
+					<div style="padding:8px 0px 0px 10px;color:white;text-shadow:1px 1px 2px black;">LOG-IN FORM</div>
+				</div>
+				<div style="width:350px;margin:auto;margin-top:10px;height:20px;">
+					<div class="login-error" style="color:red;"></div>
+				</div>
+				
+				<div style="width:350px;margin:auto;margin-top:10px;">
+					<span class="inline" style="width:90px;">Username: </span><input type="text" class="txt" id="username" maxlength="9" placeholder="Enter your Student Number">
+				</div>
+				
+				<div style="width:350px;margin:auto;margin-top:20px;">
+					<span class="inline" style="width:90px;">Password: </span><input type="password" class="txt" id="password" placeholder="Enter your Password">
+				</div>
+				
+				<div style="width:350px;margin:auto;margin-top:30px;">
+					<div style="margin-top:5px;">
+						<span class="a" id="forgotpass">Forgot Password</span><button id="login" class="right" style="margin-right:-5px;width:120px;">Login</button>
+					</div>
+				</div>
+			</div>
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+    
+	 <div data-role="footer" data-position="fixed" data-theme="b">
+	<h1>Alrights Reserved 2013</h1>
+</div>
+	
+</div>
+  
+  </div>
+  <!--PORTAL end-->
+
+</div>
+
+
+</body>
+</html>

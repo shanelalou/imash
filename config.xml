@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<widget xmlns="http://w3.org/ns/widgets" xmlns:rim="http://www.blackberry.com/ns/widgets" version="1.0.0.0" id="cap">
+
+<name>CCS ACCESS POINT</name>
+<author>Sharmaine Manuel</author>
+<icon src="images/imash.png" />
+<content src="index.html" />
+
+<feature id="blackberry.ui.dialog"/>
+
+<feature id="blackberry.app">
+<param name="orientation" value="portrait" />
+</feature>
+
+</widget>
